@@ -26,8 +26,7 @@ class TableViewController : UIViewController, UITableViewDataSource, UITableView
         photoImageView.layer.borderColor = UIColor.black.cgColor
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         photoImageView.clipsToBounds = true
-        
-//        tabBarItem = UITabBarItem(title: "Contacts", image: nil, tag: 0)
+        tableView.tableFooterView = UIView(frame: .zero)
     }
         
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
